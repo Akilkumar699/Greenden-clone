@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body>
+     <!--Responsive navbar-->
+     <nav
+     class="bg-green-100 flex items-center justify-between p-3 shadow-xl sticky"
+   >
+     <h1 class="text-xl">GREENDEN</h1>
+
+     <svg
+       xmlns="http://www.w3.org/2000/svg"
+       fill="none"
+       viewBox="0 0 24 24"
+       stroke-width="1.5"
+       stroke="currentColor"
+       class="w-6 h-6 md:hidden"
+     >
+       <path
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+       />
+     </svg>
+
+     <ul class="gap-3 hidden md:flex">
+       <li>
+         <a class="text-gray-500 hover:underline hover:text-black" href="./index.html"
+           >Home</a
+         >
+       </li>
+       <li>
+         <a class="text-gray-500 hover:underline hover:text-black" href="./product.html"
+           >About</a
+         >
+       </li>
+       <li>
+         <a class="text-gray-500 hover:underline hover:text-black" href="./contact.html"
+           >Contact</a
+         >
+       </li>
+     </ul>
+   </nav>
+
+   <!--Our product-->
+   <section class="text-center m-4">
+    <h1 class="font-bold text-xl">Our Products</h1>
+    <input type="text" class="border border-black mt-2" style="width: 80%">
+   </section>
+
+   <!--Plant-->
+   <Section class="grid grid-cols-2 md:grid-cols-4 gap-y-5 m-4 text-center">
+    <div>
+         <img src="./image/annie-spratt-hX_hf2lPpUU-unsplash.jpg" alt="" class="inline w-40">
+    </div>
+    <div>
+        <img src="./image/annie-spratt-hX_hf2lPpUU-unsplash.jpg" alt="" class="inline w-40">
+    </div>
+    <div>
+        <img src="./image/annie-spratt-hX_hf2lPpUU-unsplash.jpg" alt="" class="inline w-40">
+    </div>
+    <div>
+        <img src="./image/annie-spratt-hX_hf2lPpUU-unsplash.jpg" alt="" class="inline w-40">
+    </div>
+    <div>
+        <img src="./image/annie-spratt-hX_hf2lPpUU-unsplash.jpg" alt="" class="inline w-40">
+    </div>
+    <div>
+        <img src="./image/annie-spratt-hX_hf2lPpUU-unsplash.jpg" alt="" class="inline w-40">
+    </div>
+    <div>
+        <img src="./image/annie-spratt-hX_hf2lPpUU-unsplash.jpg" alt="" class="inline w-40">
+    </div>
+    <div>
+        <img src="./image/annie-spratt-hX_hf2lPpUU-unsplash.jpg" alt="" class="inline w-40">
+    </div>
+   </Section>
+
+    <!--footer-->
+    <section class="bg-green-100 p-4 mt-4">
+        <h2 class="font-bold text-xl">GREENDEN</h2>
+        <p class="mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam quis excepturi itaque eaque natus obcaecati placeat dolorum soluta, ullam praesentium ut quam nostrum illum velit! Quos inventore dignissimos vero aperiam.</p>
+        <p class="mt-2">@ 2021 greenday.com</p>
+      </section>
+</body>
+</html>
