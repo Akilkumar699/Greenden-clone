@@ -24,7 +24,7 @@
    >
      <h1 class="text-xl">GREENDEN</h1>
 
-     <svg
+     <svg id="nav-icon"
        xmlns="http://www.w3.org/2000/svg"
        fill="none"
        viewBox="0 0 24 24"
@@ -58,37 +58,78 @@
      </ul>
    </nav>
 
+       <!--Side Navbar-->
+
+       <section id="nav-sec" class="w-6/12 h-svh bg-green-100 fixed top-0 -right-1/2 z-20 md:hidden transform duration-1000">
+        <div>
+          <p id="close-nav" class="text-right p-5 cursor-pointer">X</p>
+        </div>
+        <ul class="gap-10 flex flex-col items-center ">
+          <li>
+            <a class="text-gray-500 hover:underline hover:text-black" href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="text-gray-500 hover:underline hover:text-black" href="./product.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="text-gray-500 hover:underline hover:text-black" href="./contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </section>
+
    <!--Our product-->
    <section class="text-center m-4">
     <h1 class="font-bold text-xl">Our Products</h1>
-    <input type="text" class="border border-black mt-2" style="width: 80%">
+    <input type="text" class="border border-black mt-2 p-2" style="width: 80%" id="Search-input" />
    </section>
 
    <!--Plant-->
-   <Section class="grid grid-cols-2 md:grid-cols-4 gap-y-5 m-4 text-center">
-    <div>
+   <Section class="grid grid-cols-2 md:grid-cols-4 gap-y-5 m-4 text-center" id="Product-Container">
+    <div class="divcontanier">
          <img src="./image/nagy-arnold-X_IvVDuHvDQ-unsplash.jpg" alt="" class="inline w-40 transform hover:-translate-y-1">
+         <h1>Rose Plant</h1>
+         <p>$20</p>
     </div>
-    <div>
+    <div class="divcontanier">
         <img src="./image/nagy-arnold-X_IvVDuHvDQ-unsplash.jpg" alt="" class="inline w-40 transform hover:-translate-y-1">
+        <h1>lilac Plant</h1>
+        <p>$20</p>
     </div>
-    <div>
+    <div class="divcontanier">
         <img src="./image/nagy-arnold-X_IvVDuHvDQ-unsplash.jpg" alt="" class="inline w-40 transform hover:-translate-y-1">
+        <h1>Lily Plant</h1>
+        <p>$20</p>
     </div>
-    <div>
+    <div class="divcontanier">
         <img src="./image/nagy-arnold-X_IvVDuHvDQ-unsplash.jpg" alt="" class="inline w-40 transform hover:-translate-y-1">
+        <h1>Hibiscus Plant</h1>
+        <p>$20</p>
     </div>
-    <div>
+    <div class="divcontanier">
         <img src="./image/evie-s-_8vovuZCj0c-unsplash.jpg" alt="" class="inline w-40 transform hover:-translate-y-1">
+        <h1>New pet Plant</h1>
+        <p>$20</p>
     </div>
-    <div>
+    <div class="divcontanier">
         <img src="./image/evie-s-_8vovuZCj0c-unsplash.jpg" alt="" class="inline w-40 transform hover:-translate-y-1">
+        <h1>Sunflower Plant</h1>
+        <p>$20</p>
     </div>
-    <div>
+    <div class="divcontanier">
         <img src="./image/evie-s-_8vovuZCj0c-unsplash.jpg" alt="" class="inline w-40 transform hover:-translate-y-1">
+        <h1>Peony Plant</h1>
+        <p>$20</p>
     </div>
-    <div>
+    <div class="divcontanier">
         <img src="./image/evie-s-_8vovuZCj0c-unsplash.jpg" alt="" class="inline w-40 transform hover:-translate-y-1">
+        <h1>lotus Plant</h1>
+        <p>$20</p>
     </div>
    </Section>
 
@@ -98,5 +139,7 @@
         <p class="mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam quis excepturi itaque eaque natus obcaecati placeat dolorum soluta, ullam praesentium ut quam nostrum illum velit! Quos inventore dignissimos vero aperiam.</p>
         <p class="mt-2">@ 2021 greenday.com</p>
       </section>
+
+      <script src="./product.js"></script>
 </body>
 </html>

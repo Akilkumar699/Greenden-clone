@@ -24,7 +24,7 @@
    >
      <h1 class="text-xl">GREENDEN</h1>
 
-     <svg
+     <svg id="nav-icon"
        xmlns="http://www.w3.org/2000/svg"
        fill="none"
        viewBox="0 0 24 24"
@@ -58,6 +58,31 @@
      </ul>
    </nav>
 
+       <!--Side Navbar-->
+
+       <section id="nav-sec" class="w-6/12 h-svh bg-green-100 fixed top-0 -right-1/2 z-20 md:hidden transform duration-1000">
+        <div>
+          <p id="close-nav" class="text-right p-5 cursor-pointer">X</p>
+        </div>
+        <ul class="gap-10 flex flex-col items-center ">
+          <li>
+            <a class="text-gray-500 hover:underline hover:text-black" href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="text-gray-500 hover:underline hover:text-black" href="./product.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="text-gray-500 hover:underline hover:text-black" href="./contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </section>
+
    <!--contact-->
    <section class="bg-white dark:bg-gray-900">
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -87,5 +112,7 @@
         <p class="mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam quis excepturi itaque eaque natus obcaecati placeat dolorum soluta, ullam praesentium ut quam nostrum illum velit! Quos inventore dignissimos vero aperiam.</p>
         <p class="mt-2">@ 2021 greenday.com</p>
       </section>
+
+      <script src="./index.js"></script>
 </body>
 </html>
